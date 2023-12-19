@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-component-child-khvp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-lgtc-tenant/build-suite-component-update-dcvd/multi-component-child-khvp@sha256:a5698d2a6a55f6b23699f41f571b6ff02f8516c7a9f6fc4564b221d86511bca2
+        name: container-image
+        resources: {}
+status: {}
